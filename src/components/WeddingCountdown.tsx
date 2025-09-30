@@ -34,29 +34,65 @@ const WeddingCountdown = () => {
 
   return (
     <div className="text-center py-8 px-4">
-      <h3 className="text-2xl md:text-3xl elegant-font font-bold text-primary mb-6 flex items-center justify-center gap-3">
-        <Clock className="w-8 h-8" />
-        Faltan...
-      </h3>
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-2xl mx-auto">
-        <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-4 soft-shadow">
-          <div className="text-3xl md:text-4xl font-bold text-primary">{timeLeft.days}</div>
-          <div className="text-sm text-muted-foreground">Días</div>
-        </div>
-        <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-4 soft-shadow">
-          <div className="text-3xl md:text-4xl font-bold text-primary">{timeLeft.hours}</div>
-          <div className="text-sm text-muted-foreground">Horas</div>
-        </div>
-        <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-4 soft-shadow">
-          <div className="text-3xl md:text-4xl font-bold text-primary">{timeLeft.minutes}</div>
-          <div className="text-sm text-muted-foreground">Minutos</div>
-        </div>
-        <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-4 soft-shadow">
-          <div className="text-3xl md:text-4xl font-bold text-primary">{timeLeft.seconds}</div>
-          <div className="text-sm text-muted-foreground">Segundos</div>
-        </div>
+  <h3
+    className="text-2xl md:text-3xl elegant-font font-bold mb-6 flex items-center justify-center gap-3"
+    style={{ color: "rgba(104, 11, 8, 1)" }}
+  >
+    <Clock className="w-8 h-8" style={{ color: "rgba(104, 11, 8, 1)" }} />
+    Faltan...
+  </h3>
+
+  <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-2xl mx-auto">
+    <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-4 soft-shadow">
+      <div
+        className="text-3xl md:text-4xl font-bold"
+        style={{ color: "rgba(104, 11, 8, 1)" }}
+      >
+        {timeLeft.days}
+      </div>
+      <div className="text-sm" style={{ color: "rgba(104, 11, 8, 1)" }}>
+        Días
       </div>
     </div>
+
+    <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-4 soft-shadow">
+      <div
+        className="text-3xl md:text-4xl font-bold"
+        style={{ color: "rgba(104, 11, 8, 1)" }}
+      >
+        {timeLeft.hours}
+      </div>
+      <div className="text-sm" style={{ color: "rgba(104, 11, 8, 1)" }}>
+        Horas
+      </div>
+    </div>
+
+    <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-4 soft-shadow">
+      <div
+        className="text-3xl md:text-4xl font-bold"
+        style={{ color: "rgba(104, 11, 8, 1)" }}
+      >
+        {timeLeft.minutes}
+      </div>
+      <div className="text-sm" style={{ color: "rgba(104, 11, 8, 1)" }}>
+        Minutos
+      </div>
+    </div>
+
+    <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-4 soft-shadow">
+      <div
+        className="text-3xl md:text-4xl font-bold"
+        style={{ color: "rgba(104, 11, 8, 1)" }}
+      >
+        {timeLeft.seconds}
+      </div>
+      <div className="text-sm" style={{ color: "rgba(104, 11, 8, 1)" }}>
+        Segundos
+      </div>
+    </div>
+  </div>
+</div>
+
   );
 };
 
